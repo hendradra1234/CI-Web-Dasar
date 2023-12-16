@@ -30,7 +30,7 @@
 			<td>
 
 				<tbody>
-					<?php $no-1; ?>
+					<?php $no = 1; ?>
 					<?php foreach ($data_mhs as $hasil) : ?>
 					<tr>
 						<td><?= $no ?></td>
@@ -38,12 +38,14 @@
 						<td><?= $hasil['nm_mhs'] ?></td>
 						<td><?= $hasil['tmp_lahir'] ?>, <?= $hasil['tgl_lahir'] ?></td>
 						<td><?= $hasil['jenkel'] ?></td>
-						<a href="<?= base_url('mahasiswa_controller/hapus/'). $hasil['nim'] ?>"
-							onclick=" return confirm(" Apakah Anda Ingin Menghapus Data Tersebut?')"><span
+						<td>
+							<a href="<?= base_url('mahasiswa_controller/hapus/'). $hasil['nim'] ?>"
+							onclick=" return confirm("Apakah Anda Ingin Menghapus Data Tersebut?')"><span
 								class="badge bg-danger">Hapus</span></a>
-			</td>
-			</tr>
-			<?php $no++?>
+						</td>
+				</td>
+				</tr>
+				<?php $no++?>
 			<?php endforeach ?>
 			</tbody>
 		</table>

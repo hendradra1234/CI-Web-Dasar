@@ -1,21 +1,21 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Mahasiswa_controller extends CI_Controller {
+class mahasiswa_controller extends CI_Controller {
 	public function __construct() {
-		parrent::__construct();
+		parent::__construct();
 		$this->load->model('mahasiswa_model');
 	}
 
 	public function index() {
 		$data = [
-			'data_mhs' => this->mahasiswa_model -> view_data_mhs()
+			'data_mhs' => $this->mahasiswa_model -> view_data_mhs()
 		];
 
 		$this->load->view('mahasiswa', $data);
 	 }
 
-	 public function delete($nim) {
+	 public function hapus($nim) {
 		$this->mahasiswa_model -> hapus_mhs($nim);
 		$this->session->set_flashdata('pesan', '<div class = "alert alert-success" roel = "alert">
 		Berhasil Dihapus

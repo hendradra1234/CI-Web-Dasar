@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class mahasiswa_model extends CI_Model
 {
 	public function view_data_mhs() {
-		return $this->db->get('db_mahasiswa')->result_array();
+		return $this->db->get('tbl_mahasiswa')->result_array();
 	}
 
 	public function hapus_mhs($nim) {
