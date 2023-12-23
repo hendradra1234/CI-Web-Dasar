@@ -1,0 +1,7 @@
+CREATE TABLE tbl_mahasiswa (
+	nim VARCHAR(20) PRIMARY KEY NOT NULL,
+	nm_mhs VARCHAR(50) NOT NULL,
+	tmp_lahir VARCHAR(50) NOT NULL,
+	tgl_lahir DATE NOT NULL,
+	jenkel VARCHAR(10) NOT NULL
+);

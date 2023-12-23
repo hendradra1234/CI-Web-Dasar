@@ -34,8 +34,8 @@ class mahasiswa_controller extends CI_Controller {
 	 private function _inputmahasiswa() {
 		$nim = $this->input->post('nim');
 		$nm_mhs = $this->input->post('nm_mhs');
-		$tempat_lahir = $this->input->post('tempat_lahir');
-		$tanggal_lahir = $this->input->post('tanggal_lahir');
+		$tempat_lahir = $this->input->post('tmp_lahir');
+		$tanggal_lahir = $this->input->post('tgl_lahir');
 		$jk = $this->input->post('jk');
 
 		$data = array(

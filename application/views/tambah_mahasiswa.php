@@ -23,8 +23,8 @@
 				<label for="nim">NIM</label>
 				<input type="text" class="form-control" id="nim" name="nim" placeholder="Enter NIM"> </div>
 			<div class="form-group">
-				<label for="nama">Nama Mahasiswa</label>
-				<input type="text" class="form-control" id="nama" name="nama" placeholder="Enter Nama Mahasiswa"
+				<label for="nm_mhs">Nama Mahasiswa</label>
+				<input type="text" class="form-control" id="nm_mhs" name="nm_mhs" placeholder="Enter Nama Mahasiswa"
 					required="">
 			</div>
 			<div class="form-group">
